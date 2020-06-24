@@ -90,7 +90,7 @@ func NewRFC5424Log(t time.Time) string {
 	return fmt.Sprintf(
 		RFC5424Log,
 		gofakeit.Number(0, 191),
-		gofakeit.Number(1, 3),
+		1,
 		t.Format(RFC5424),
 		gofakeit.DomainName(),
 		gofakeit.Word(),
